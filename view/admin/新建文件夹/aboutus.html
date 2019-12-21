@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            text-align: center  ;
+        }
+        form{
+            width: 1200px;
+            height: auto;
+            margin: 30px auto;
+        }
+        button{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>关于我们</h1>
+<form class="layui-form" action="">
+    <div class="layui-form-item">
+        <label class="layui-form-label">关于我们</label>
+        <div class="layui-input-block">
+            <textarea id="textArea" name="content" style="display: none"></textarea>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="../static/layui/layui.js"></script>
+<script>
+    layui.use(['form','jquery','layer','layedit'],function () {
+        var {form,$,layer,layedit}=layui;
+        var index=layedit.build("textArea",{height: 180});
+        $.get('aboutus1.php',{id:1},function (res) {
+            let data=JSON.parse(res);
+            layedit.setContent(index,data.content);
+        })
+        form.on('submit(formDemo)',function (data) {
+            data.field.content=layedit.getContent(index);
+            $.post('aboutus1.php',data.field,function (res) {
+                let data=JSON.parse(res);
+                if(data.code==200){
+                    layer.msg(data.msg)
+                }else{
+                    layer.msg(data.msg)
+                }
+            })
+            return false;
+        })
+
+    })
+</script>
+</body>
+</html>

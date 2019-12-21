@@ -1,0 +1,90 @@
+<?php
+$news=$mysqli->query("select * from news order by nsort desc limit 6")->fetch_all(MYSQLI_ASSOC);
+?>
+		<link rel="stylesheet" type="text/css" href="../static/index/css/new_file.css" />
+		<link rel="stylesheet" type="text/css" href="../static/index/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/index/css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/index/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../static/index/css/index.css" />
+
+		<div class="banner">	
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../static/index/img/banner_03.png" /></div>
+					<div class="swiper-slide"><div class="banner2"><!--<img src="../static/index/img/banner2_03.png" />--></div></div>
+				</div>
+					            
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next fenye1"></div> 
+				<div class="swiper-button-prev fenye"></div>
+			</div>
+		</div> 
+		
+		<p class="np1">我们的努力，只是为了您的满意</p>
+		<p class="np2">我们为您提供最全面、最大、最好的游戏商城</p>
+		<ul class="nu">
+			<li>
+				<img class="l1" src="../static/index/img/刺客信条：枭雄.jpg" />
+				<p class="nup1">刺客信条：枭雄</p>
+				<img class="l2" src="../static/index/img/aHR0cDovLzU0ZDRhMDMzOTQ4OWQudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi9MSU5FLTE4MngxLnBuZw_p_p100_p_3D_p_p100_p_3D.png" />
+				<p class="nup2">《刺客信条：枭雄》的故事发生在维多利亚时期的英国伦敦。两位主角由一名刺客抚养长大，男主名为雅各·弗莱，他将被卷入维多利亚女王统治下的罪恶伦敦，并试图去恢复和平统治。女主角是雅各·弗莱的姐姐伊薇·弗莱，她善于潜行，懂得控制管理之道，将帮助雅各·弗莱惩恶扬善。</p>
+			</li>
+			<li>
+				<img class="l1" src="../static/index/img/全境封锁.jpg" />
+				<p class="nup1">全境封锁</p>
+				<img class="l2" src="../static/index/img/aHR0cDovLzU0ZDRhMDMzOTQ4OWQudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi9MSU5FLTE4MngxLnBuZw_p_p100_p_3D_p_p100_p_3D.png" />
+				<p class="nup2">该游戏讲述了美国遭遇到一场有计划的生化瘟疫恐怖袭击，在短时间内就造成了大量人员死亡，导致社会动荡不安，秩序全面瓦解，整个国家岌岌可危。为应对和解决该危机，美国政府启用了早先由国土战略局实施的“The Division”（全境封锁）计划，唤醒了隐藏于平民中的秘密特工们，并组织起来以保护他们所在的城市。特工们拥有很高的行动权限，其主要任务包括恢复基础设施，对抗武装犯罪，以及追查真相等等。玩家所扮演的角色，便是其中的一名特工。</p>
+			</li>
+			<li>
+				<img class="l1" src="../static/index/img/幽灵行动：断点.jpg" />
+				<p class="nup1">幽灵行动：断点</p>
+				<img class="l2" src="../static/index/img/aHR0cDovLzU0ZDRhMDMzOTQ4OWQudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi9MSU5FLTE4MngxLnBuZw_p_p100_p_3D_p_p100_p_3D.png" />
+				<p class="nup2">《幽灵行动：断点》是一款设定于多样且充满敌意的开放世界下的军事射击游戏，并且完全支持单人或至多4名玩家合作游玩。玩家将探索最先进科技设施与野生自然环境共存的神秘岛屿“极光岛”。而这里也是无人机技术创造者，科技巨头斯凯尔科技公司之所在。而现在 “极光岛”已落入敌手，所有通讯均已中断。</p>
+			</li>
+			<li>
+				<img class="l1" src="../static/index/img/纪元2205 .jpg" />
+				<p class="nup1">纪元2205</p>
+				<img class="l2" src="../static/index/img/aHR0cDovLzU0ZDRhMDMzOTQ4OWQudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi9MSU5FLTE4MngxLnBuZw_p_p100_p_3D_p_p100_p_3D.png" />
+				<p class="nup2">纪元2205年，为了人类美好的未来，你将加入人类的未来计划。征服地球，建立繁华的城市和庞大的工业基地。但为了确保人民的繁荣兴盛，你必须向着太空进发。</p>
+			</li>
+		</ul>
+		<p class="np3">引领时代，驾驭未来</p>
+		<div class="nj">
+			<img src="../static/index/img/aHR0cDovLzU0ZDRhMDMzOTQ4OWQudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNC8wNi8wMjUwODI0XzEyXzkzN2NiNjBlLTA2Y2ItNDBiNS1iNzUzLTYwYmM1NmNiNmY5N19yZXNpemVfcGljdHVyZS0xMDAweDc0LnBuZw_p_p100_p_3D_p_p100_p_3.png" />
+		</div>
+		<div class="jianjie">
+			<img src="../static/index/img/tu1_03.png" />
+			<div class="jianjie1">
+				<div class="jianjie2">
+					<p class="jp1">公司简介</p>
+					<p class="jp2">MORE +</p>
+				</div>
+				<p class="jp3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;超级玩家娱乐软件公司(Super Player)成立于2019年，是一家总部设于中国陕西的电动游戏开发商和发行商。它在全世界拥有23间游戏开发工作室。2019年它是欧洲第三大独立游戏开发商、北美第四独立出版商。</p>
+				<p class="jp4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;超级玩家娱乐软件公司(Super Player)是一家跨国的游戏制作、发行和代销商。作为多媒体工业的佼佼者，其广泛的业务稳步扩展，在和各老牌游戏公司合作的基础上，也在不断推出独特的产品，加强自己在国际市场上的影响力。其中优秀的作品有《雷曼》、《刺客信条》系列(Assassin's Creed)、《波斯王子》(Prince of Persia)、《细胞分裂》（Tom Clancy's Splinter Cell）、《彩虹六号》系列（Tom Clancy's Rainbow Six）、《看门狗》系列（Watch_Dogs）、《全境封锁》系列（Tom clancy's The Division)、《幽灵行动》系列（Tom Clancy's Ghost Recon）等。</p>
+			</div>
+		</div>
+		<div class="meirong">
+			<img src="../static/index/img/tu2_03.png" />
+			<div class="meirong1">
+				<div class="meirong2">
+					<p class="jp1">新闻事件</p>
+					<p class="jp2">MORE +</p>
+				</div>
+				<ul class="mu">
+					<?php foreach($news as $v) { ?>
+					<li class="bb">
+						<a href="newsdatail.php?nid=<?php echo $v['nid']?>">
+							<p class="mup1"><?php echo $v["ntitle"]?></p>
+							<p class="mup2"><?php echo $v['update_time'] ?></p>
+						</a>
+					</li>
+					<?php } ?>
+				</ul>
+			</div>
+		</div>
+<script src="../static/index/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/index/js/swiper.animate-twice.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/index/js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/index/js/index.js" type="text/javascript" charset="utf-8"></script>

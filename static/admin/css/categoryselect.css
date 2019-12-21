@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+table{
+    text-align: center;
+    width:1200px;
+    margin: 0 auto;
+}
+#demo {
+    width:1200px;
+    margin: 0 auto;
+}
+.layui-table th{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+input{
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+}
+#ss {
+    margin: 0 auto;
+    width: 1200px;
+    height: 312px;
+ }
+/*s .layui-table-cell {*/
+/*    height: 36px;*/
+/*    line-height: 36px;*/
+/*}*/
+/*.layui-btn{*/
+/*    padding-bottom: 20px;*/
+/*}*/
+form{
+    display: none;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+.layui-layer-title {
+    padding: 0;
+}
